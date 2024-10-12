@@ -1,0 +1,35 @@
+.thanks__content{
+    margin: 0 auto;
+    position: relative;
+}
+
+.thanks__content--background{
+    width: 100%;
+    font-size: 280px;
+    color: rgba(139, 121, 105, 0.05);
+}
+
+.thanks__content-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-items: center;
+}
+
+.thanks__content-inner--text{
+    color: #8B7969;
+}
+
+.home__button{
+    margin: 40px;
+}
+
+.home__button-link{
+    padding: 10px 40px;
+    background-color: #82756A;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+}

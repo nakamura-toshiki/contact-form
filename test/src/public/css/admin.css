@@ -1,0 +1,307 @@
+.header-nav{
+    align-items: center;
+}
+
+.header-nav__button{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+}
+
+.header-nav__button-logout{
+    text-decoration: none;
+    color: #D9C6B5;
+    border: none;
+    padding: 3px 15px;
+    border: 1px solid #D9C6B5;
+    background-color: rgba(240, 240, 240, 0.6);
+}
+
+.admin__content{
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.admin__content-heading{
+    color: #8B7969;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.search-form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.search-form__item{
+    width: 70%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-form__item input,
+.search-form__item-select select {
+
+    height: 50px;
+    padding: 5px 10px;
+    background-color: #F4F4F4;
+    border: 1px solid #E3DED9;
+    color: #8B7969;
+}
+
+.search-form__item-select{
+    position: relative;
+    display: inline-block;
+}
+
+.search-form__item-select::after{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    border: 7px solid transparent;
+    border-top: 7px solid #BEB1A6;
+    content: "";
+    transform: translateY(-20%);
+    pointer-events: none;
+}
+
+select{
+    appearance: none;
+}
+
+.search-form__item-text{
+    width: 37%;
+}
+
+.search-form__item-select select[name="gender"]{
+    width: 100%;
+    margin-right: 20px;
+}
+
+.search-form__item-select select[name="categories"]{
+    width: 100%;
+    margin-right: 20px;
+}
+
+.search-form__button{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.search-form__button button{
+    height: 50px;
+    width: 40%;
+    background-color: #82756A;
+    border: none;
+    color: #fff;
+}
+
+.search-form__button input{
+    height: 50px;
+    width: 40%;
+    background-color: #D9C6B5;
+    border: none;
+    color: #fff;
+}
+
+.admin__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-table{
+    margin: 0 auto;
+    border: 1px solid #E0DFDE;
+}
+
+.admin-table__inner{
+    width: 100%;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.admin-table__header-row{
+    height: 60px;
+    background-color: #8b7969;
+    padding: 5px 10px;
+    padding-right: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.admin-table__header-1,
+.admin-table__header-2,
+.admin-table__header-3,
+.admin-table__header-4{
+    color: #fff;
+    font-weight: bold;
+}
+
+.admin-table__row{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5px 10px;
+    border-bottom: 1px solid #E0DFDE;
+    align-items: center;
+}
+
+.admin-table__item-1,
+.admin-table__item-2,
+.admin-table__item-3,
+.admin-table__item-4,
+.admin-table__item-5{
+    color: #8B7969;
+    font-weight: bold;
+}
+
+.admin-table__header-1,
+.admin-table__item-1{
+    width: 15%;
+}
+
+.admin-table__header-2,
+.admin-table__item-2{
+    width: 10%;
+}
+
+.admin-table__header-3,.admin-table__header-4,
+.admin-table__item-3,.admin-table__item-4{
+    width: 20%;
+}
+
+.admin-table__item-5{
+    width: 15%;
+    text-align: right;
+    position: relative;
+}
+
+.admin-table__modal-checkbox {
+    display: none;
+}
+
+/* モーダルの背景（デフォルトは非表示） */
+.admin-table__modal-content {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.admin-table__modal-checkbox:checked ~ .admin-table__modal-content {
+    display: block;
+}
+
+.admin-table__modal-inner {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    width: 50%;
+    height: 90%;
+    border: #8B7969;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.admin-table__modal-btn {
+    background-color: rgba(244, 244, 244, 0.3);
+    color: #D9C6B5;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid #D9C6B5;
+    display: inline-block;
+    text-align: center;
+}
+
+/* 閉じるボタン（×） */
+.admin-table__modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: #aaa;
+    cursor: pointer;
+    border: 1px solid #8B7969;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.admin-table__modal-close:hover {
+    color: black;
+}
+
+.delete-form{
+    padding: 80px;
+}
+
+
+.modal-table__inner{
+    width: 100%;
+}
+
+
+.modal-table__header{
+    padding: 15px 30px;
+    width: 30%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.modal-table__text{
+    padding: 15px 30px;
+    text-align: left;
+}
+
+.modal-table__text input{
+    width: 100;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    width: 100%;
+}
+
+.modal-table__row:last-child .modal-table__header,
+.modal-table__row:last-child .modal-table__text{
+    height: 120px;
+}
+
+.delete-form__button{
+    margin: 30px;
+    display: inline-block;
+    justify-content: center;
+}
+
+
+.delete-form__button-submit{
+    margin: 0 auto;
+    padding: 5px 10px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}

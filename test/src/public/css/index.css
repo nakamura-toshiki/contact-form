@@ -1,0 +1,112 @@
+.contact-form__content{
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading{
+    margin-bottom: 30px;
+    text-align: center;
+    color: #8b7969;
+}
+
+.form{
+    margin: 0 auto;
+    width: 80%;
+    color: #8b7969;
+    text-align: center;
+}
+
+.form__group{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.form__label--required{
+    margin-left: 3px;
+    color: red;
+}
+
+.form__group-content{
+    text-align: left;
+    width: 65%;
+}
+
+.form__error {
+    position: absolute;
+    top: 100%;
+    left: 35%;
+    display: block;
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+  }
+
+.form__input--text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__input--text input,
+.form__input--textarea textarea,
+.form__select--wrapper select{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #F4F4F4;
+    color: #8B7969;
+}
+
+.form__input--text input{
+    height: 38px;
+}
+
+.form__input--text input[name="tel1"],
+.form__input--text input[name="tel2"],
+.form__input--text input[name="tel3"]{
+    width: 30%;
+}
+
+.form__input--text input[name="first_name"],
+.form__input--text input[name="last_name"]{
+    width: 45%;
+}
+
+.form__input--textarea textarea{
+    height: 129px;
+}
+
+.form__select--wrapper{
+    width: 50%;
+    position: relative;
+}
+
+.form__select--wrapper::after{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border: 10px solid transparent;
+    border-top: 10px solid #BEB1A6;
+    content: "";
+    transform: translateY(-20%);
+    pointer-events: none;
+}
+
+select{
+    appearance: none;
+}
+
+.form__button{
+    margin-top: 30px;
+}
+
+.form__button-submit{
+    padding: 10px 40px;
+    border: none;
+    background-color: #82756A;
+    color: #fff;
+    cursor: pointer;
+}
+
